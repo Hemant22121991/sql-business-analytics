@@ -1,0 +1,27 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large data files — NEVER commit these
+*.csv
+*.xlsx
+*.parquet
+*.zip
+*.gz
+*.tar
+
+# Raw SQL dumps with data — too large for GitHub
+# Only commit schema-structure .sql files (no INSERT rows)
+*_data.sql
+*_dump.sql
+*_backup.sql
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# dbt (will need this later)
+target/
+dbt_packages/
+logs/
